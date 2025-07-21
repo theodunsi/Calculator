@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('./font/PPNeueMontreal-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body, html {
+    font-family: 'NeueMontreal', sans-serif;
+    height: 100%;           
+    margin: 0px 4px 4px 4px;               
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between; 
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+
+.outputDisplay {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.digitButtons {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    gap: 8px;
+    flex-wrap: wrap;
+
+}
+
+.operators {
+    display: flex;
+    gap: 8px;
+    flex: 0 0 40%;
+}
+
+.operators button {
+    flex-grow: 1;
+}
+
+.digitButtons button {
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
+    font-size: 120px;
+    font-family: 'NeueMontreal', sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.digitButtons button:hover, 
+.operators button:hover,
+.clear:hover,
+.equals:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottomRow{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottomRow button {
+    aspect-ratio: 1 / 1;
+    width: calc(10%);
+    font-size: 120px;
+    font-family: Arial, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: medium;
+    padding: 8px 0px 8px 0px;
+    margin: 0;
+}
